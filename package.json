@@ -7,7 +7,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "rets": "0.0.1"
   },
   "author": "John Walz",
   "contributors": [

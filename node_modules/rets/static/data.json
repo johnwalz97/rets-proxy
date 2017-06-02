@@ -1,0 +1,210 @@
+{
+    "project": {
+        "name": "RETS",
+        "description": "Node.js RETS client.",
+        "version": "0.0.1",
+        "url": "https://github.com/UsabilityDynamics/node-rets/",
+        "logo": "http://a3d72a45d111006ec192-ec5b80a12b0b09b4d52373336afb4254.r80.cf1.rackcdn.com/usability-dynamics.png"
+    },
+    "files": {
+        "lib/rets.js": {
+            "name": "lib/rets.js",
+            "modules": {
+                "RETS": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "RETS": {
+            "name": "RETS",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/rets.js",
+            "line": 1,
+            "description": "RETS Client\n===========\n\n### Event Types\n- digest.error\n- connection: General connection event - could mean success or error.\n- connection.success: Successful connection only\n- connection.error: General connection error.\n- connection.parse.error: General connection parsing error.\n- connection.closed: Digest authentication connection closed.\n- request.error: General request error.\n- request.parse.error: Request successful, but parsing failed.\n- request.{TYPE}.complete: Request complete.\n- get_meta.complete: Meta loaded\n\n### Response Types\nclasses -",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "settings",
+                    "description": ""
+                },
+                {
+                    "name": "cb",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            }
+        }
+    },
+    "classes": {},
+    "classitems": [
+        {
+            "file": "lib/rets.js",
+            "line": 142,
+            "description": "RETS Instance Properties.",
+            "class": "",
+            "module": "RETS"
+        },
+        {
+            "file": "lib/rets.js",
+            "line": 148,
+            "description": "Abstract RETS Query wrapper.",
+            "async": 1,
+            "itemtype": "method",
+            "name": "request",
+            "params": [
+                {
+                    "name": "type",
+                    "description": ""
+                },
+                {
+                    "name": "query",
+                    "description": ""
+                },
+                {
+                    "name": "cb",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "",
+            "module": "RETS"
+        },
+        {
+            "file": "lib/rets.js",
+            "line": 212,
+            "description": "Get Classification Meta Data",
+            "async": 1,
+            "chainable": 1,
+            "itemtype": "method",
+            "name": "get_classifications",
+            "params": [
+                {
+                    "name": "cb",
+                    "description": "Callback function.",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "Context",
+                "type": "Object"
+            },
+            "class": "",
+            "module": "RETS"
+        },
+        {
+            "file": "lib/rets.js",
+            "line": 236,
+            "description": "Parse RETS response and return an Object.",
+            "async": 1,
+            "chainable": 1,
+            "itemtype": "method",
+            "name": "_parse",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Instance.",
+                "type": "*"
+            },
+            "class": "",
+            "module": "RETS"
+        },
+        {
+            "file": "lib/rets.js",
+            "line": 347,
+            "description": "RETS Constructor Properties.",
+            "class": "",
+            "module": "RETS"
+        },
+        {
+            "file": "lib/rets.js",
+            "line": 353,
+            "description": "RETS Debugger",
+            "esample": "RETS.debug( 'Debug Mesage' );",
+            "class": "",
+            "module": "RETS"
+        },
+        {
+            "file": "lib/rets.js",
+            "line": 366,
+            "description": "Create new Connection",
+            "params": [
+                {
+                    "name": "settings",
+                    "description": ""
+                },
+                {
+                    "name": "cb",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "RETS"
+            },
+            "class": "",
+            "module": "RETS"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/rets.js:1"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/rets.js:148"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/rets.js:212"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/rets.js:236"
+        },
+        {
+            "message": "unknown tag: esample",
+            "line": " lib/rets.js:353"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/rets.js:366"
+        },
+        {
+            "message": "Missing item type\nRETS Instance Properties.",
+            "line": " lib/rets.js:142"
+        },
+        {
+            "message": "Missing item type\nRETS Constructor Properties.",
+            "line": " lib/rets.js:347"
+        },
+        {
+            "message": "Missing item type\nRETS Debugger",
+            "line": " lib/rets.js:353"
+        },
+        {
+            "message": "Missing item type\nCreate new Connection",
+            "line": " lib/rets.js:366"
+        }
+    ]
+}
